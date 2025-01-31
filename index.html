@@ -17,12 +17,14 @@
         theme: {
           extend: {
             colors: {
-              clifford: "#red",
+              clifford: "#fff",
+              mainColor: "#179800",
             },
           },
         },
       };
     </script>
+
     <!-- google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -30,8 +32,82 @@
       href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
       rel="stylesheet"
     />
-    <!-- boxicon cnd -->
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <!--font awesome cnd -->
+    <script
+      src="https://kit.fontawesome.com/a488c4734a.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      body {
+        font-family: "Manrope", sans-serif;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <header class="bg-gradient-to-b from-[#f4f1f1] to-[#eae0d4] 100%">
+      <!-- navbar -->
+      <div class="pt-8 max-w-6xl mx-auto">
+        <div class="flex justify-between items-center">
+          <!-- logo  -->
+          <div class="flex items-center">
+            <a href="" class="logo-img hidden lg:block"
+              ><img src="./image/logo-header.png" alt=""
+            /></a>
+            <a href="" class="logo-img block lg:hidden"
+              ><img src="./image/Group.png" alt=""
+            /></a>
+          </div>
+          <!-- nav-items -->
+          <div class="lg:flex items-center gap-6 hidden">
+            <a href="product">Product</a>
+            <a href="#service">Services</a>
+            <a href="contact">Contact Us</a>
+          </div>
+          <!-- icon+btn -->
+          <div class="lg:flex items-center gap-5 hidden">
+            <div class="icon flex gap-5 items-center">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <button
+              class="border-solid border border-[#179800] text-black px-4 py-2 rounded-lg"
+            >
+              Login
+            </button>
+            <button class="bg-[#179800] text-white px-4 py-2 rounded-lg">
+              Register
+            </button>
+          </div>
+
+          <!-- menu icons -->
+          <div class="lg:hidden">
+            <i
+              class="fa-solid fa-bars bg-white p-2 px-3 rounded-full text-slate-500 text-xl"
+            ></i>
+          </div>
+        </div>
+        <!-- hero section -->
+        <div
+          class="items-center flex flex-col justify-center space-y-10 text-center mt-16"
+        >
+          <div class="space-y-6 text-center w-2/3 mx-auto">
+            <h1 class="lg:text-5xl text-3xl text-slate-800 font-bold mb-8">
+              Freshness
+              <span class="text-[#179800]">You Can <br />Count</span> On, Prices
+              You’ll Love!
+            </h1>
+            <p class="text-[.9rem] mt-4 lg:mt-6 lg:w-4/5 mx-auto">
+              Shop your daily essentials at unbeatable prices. From fresh
+              produce to pantry staples, we’ve got you covered every day!
+            </p>
+          </div>
+          <div class="mb-0">
+            <img class="w-[100%]" src="./image/hero-vegetables.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </header>
+  </body>
 </html>
